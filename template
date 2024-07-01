@@ -1,0 +1,18 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="email-wrapper">
+<div class="email-wrapper-inner" style="background-image: url('https://cdn.pixabay.com/photo/2020/02/13/16/11/street-4846133_1280.jpg');">
+<div class="container" style="background-color: rgba(247, 247, 247, 0.7); border-radius: 20px; font-size: 20px; padding: 50px 30px;">
+<section style="color: #000000; text-align: center; display: grid; grid-template-columns: 1fr 3fr 1fr; grid-template-rows: 100px; grid-gap: 50px; margin-bottom: 50px;"><img style="grid-area: 1 / 1 / 1 / 1; width: 100px; height: 100px;" src="https://github.com/bab4tunde/servivenow/blob/main/.github/workflows/${mail_script:changeImpactColour}-bell.png?raw=true" />
+<h5 style="grid-area: 1 / 2 / 1 / 2; font-size: 19px; text-align: center; padding-top: 30px;">SCHEDULED MAINTENANCE</h5>
+<img style="grid-area: 1 / 3 / 1 / 4; width: 100px;" src="https://github.com/bab4tunde/servivenow/blob/main/.github/workflows/logo-here.png?raw=true" /></section>
+<section>
+<p><span class="email-header" style="font-size: 26px; font-weight: 600;">Change Ref: <span class="change-number" style="color: #0028ff; text-decoration: underline;">${URI_REF}</span></span><br /><span class="email-heading" style="font-size: 21px; font-weight: 600;">What is the change:</span><br />${description}<br /><br /><span class="email-heading" style="font-size: 21px; font-weight: 600;">Impact: <span class="impact-color" style="color: ${mail_script:changeimpactcolour};">${mail_script:CalculateEChangeImpact} At Risk!</span></span><br />${short_description}<br /><br /><span class="email-heading" style="font-size: 21px; font-weight: 600;">Change Window:</span><br />${mail_script:changeImpactPeriod}<br /><br /><span class="email-heading" style="font-size: 21px; font-weight: 600;">Reference Team:</span><br />If you have any question about the maintenance, please do not hesitate to contact the <span style="color: #0028ff; text-decoration: underline;">Corporate Network Team</span>.</p>
+</section>
+</div>
+</div>
+</div>
+${mail_script:attach_links_sm}  <!-- This is from the OOB email script, please remove the p tags  -->
+
+
+
+
